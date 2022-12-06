@@ -30,9 +30,7 @@ def get_ai_reply(msg):
     presence_penalty=0
     )
 
-    reply = response['choices'][0]['text']
-
-    reply = format_reply(reply)
+    reply = format_reply(response['choices'][0]['text'])
             
     return reply
 
