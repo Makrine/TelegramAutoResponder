@@ -3,7 +3,7 @@ from decouple import config
 from telethon import TelegramClient, events
 import time
 import random
-
+import asyncio
 
 def get_ai_reply(msg):
     response = openai.Completion.create(
@@ -26,7 +26,6 @@ api_hash = config('TELEGRAM_API_HASH')
 # phone number of the person you want to autorespond
 from_phone = config('PHONE')
 
-
 # start telegram session
 client = TelegramClient('session', api_id, api_hash)
 
@@ -35,10 +34,14 @@ async def handle_new_message(event):
 
     from_user = await event.client.get_entity(event.from_id)
     print(from_user.phone)
-    if from_user.phone == from_phone:
-        message = event.message.message
-        reply = get_ai_reply(message)
-        await client.send_message(from_phone, reply)
+    if from_user.phone == from_phone: 
+        async with client.action(from_user.phone, 'typing'):
+            message = event.message.message
+            reply = get_ai_reply(message)
+            print(reply)
+            await asyncio.sleep(2)
+            await client.send_message(from_user.phone, reply)
+        #await client.send_message(from_user.phone, reply)
 
 
 print(time.asctime(), '-', 'Auto-replying...')
