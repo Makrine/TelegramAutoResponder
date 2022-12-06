@@ -5,7 +5,13 @@ Auto reply to specific people on Telegram using OpenAI
 
 You need to create API keys for [OpenAI](https://beta.openai.com/account/api-keys) and [Telegram](https://my.telegram.org/).
 
-create ```.env``` file and write your API keys there.
+* install requirements using
+
+```
+pip install -r requirements.txt
+```
+
+* create ```.env``` file and write your API keys there.
 
 template for ```.env```:
 
@@ -18,3 +24,5 @@ PHONE = "phone_number1"
 # PHONE2 = "phone_number2"
 
 ```
+
+* run ```main.py```
