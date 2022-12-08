@@ -1,6 +1,6 @@
 ## First of all, create your [Replit account](https://replit.com/signup) and navigate to your account.
 
-# (You can follow the following insturction or just fork [my repository](https://replit.com/@Makrine/TelegramAutoResponder) on Replit and continue this from the 6th point)
+## (You can follow the following insturction or just fork [my repository](https://replit.com/@Makrine/TelegramAutoResponder) on Replit and continue this from the 6th point)
 
 1. On the top left corner click “Create”
 
