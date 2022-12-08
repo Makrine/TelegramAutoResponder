@@ -22,6 +22,7 @@ https://github.com/Makrine/TelegramAutoResponder
 ![pic 4](https://github.com/Makrine/TelegramAutoResponder/blob/master/HowToReplit/4.png?raw=true)
 
 5. Navigate to main.py and uncomment the second and the 12th lines. It should look like this
+
 EDIT: I swapped the 11th and 12th lines. it should be keep_alive() first
 
 ![pic 8](https://github.com/Makrine/TelegramAutoResponder/blob/master/HowToReplit/8.png?raw=true)
