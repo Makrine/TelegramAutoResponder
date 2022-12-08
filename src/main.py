@@ -8,5 +8,5 @@ def main():
     print(time.asctime() + '-' +'Stopped!')
     
 if __name__ == '__main__':
-    main()
     # keep_alive()
+    main()
