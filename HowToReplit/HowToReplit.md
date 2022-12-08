@@ -1,3 +1,7 @@
+## First of all, create your [Replit account](https://replit.com/signup) and navigate to your account.
+
+# (You can follow the following insturction or just fork [my repository](https://replit.com/@Makrine/TelegramAutoResponder) on Replit and continue this from the 6th point)
+
 1. On the top left corner click “Create”
 
 ![pic 1](https://github.com/Makrine/TelegramAutoResponder/blob/master/HowToReplit/1.png?raw=true)
@@ -17,11 +21,15 @@ https://github.com/Makrine/TelegramAutoResponder
 
 ![pic 4](https://github.com/Makrine/TelegramAutoResponder/blob/master/HowToReplit/4.png?raw=true)
 
-5. Now set your secrets (API keys) by pressing Secrets on the left side here.
+5. Navigate to main.py and uncomment the second and the 12th lines. It should look like this
+
+![pic 8](https://github.com/Makrine/TelegramAutoResponder/blob/master/HowToReplit/8.png?raw=true)
+
+6. Now set your secrets (API keys) by pressing Secrets on the left side here.
 
 ![pic 5](https://github.com/Makrine/TelegramAutoResponder/blob/master/HowToReplit/5.png?raw=true)
 
-6. You can either enter all Keys manually or just click “Open raw editor” and paste the following JSON there. Make sure to insert your own API keys though.
+7. You can either enter all Keys manually or just click “Open raw editor” and paste the following JSON there. Make sure to insert your own API keys though.
 ```
 {
   "OPENAI_API_KEY": "openai_api_kei",
@@ -33,13 +41,10 @@ https://github.com/Makrine/TelegramAutoResponder
 ```
 ![pic 6](https://github.com/Makrine/TelegramAutoResponder/blob/master/HowToReplit/6.png?raw=true)
 
-7. It should look like this
+8. It should look like this
 
 ![pic 7](https://github.com/Makrine/TelegramAutoResponder/blob/master/HowToReplit/7.png?raw=true)
 
-8. Navigate to main.py and uncomment the second and the 12th lines. It should look like this
-
-![pic 8](https://github.com/Makrine/TelegramAutoResponder/blob/master/HowToReplit/8.png?raw=true)
 
 9. Now click “Run” on top and wait for it to install packages. After installation is done, it will ask you the following where  you have to enter your Telegram phone number (also include the country code without “+” sign)
 
